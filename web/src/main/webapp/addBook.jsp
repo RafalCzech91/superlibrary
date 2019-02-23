@@ -14,8 +14,9 @@
 <body>
 <jsp:include page="/WEB-INF/fragments/header.jspf"/>
 
-
+<br>
 <form action="addBook.jsp" method="post" class="needs-validation" novalidate>
+    <br>
     <div class="container">
     <div class="form-row">
         <div class="col-md-4 mb-3">
@@ -62,15 +63,15 @@
             </select>
         </div>
         <div class="form-group col-md-2">
-            <label for="inputDate">Date of borrow</label>
-            <input type="text" class="form-control" id="inputDate">
+            <label for="releaseDate">Release date</label>
+            <input type="date" class="form-control" id="releaseDate">
         </div>
     </div>
     <div class="form-group">
         <div class="form-check">
             <input class="form-check-input" type="checkbox" id="gridCheck">
             <label class="form-check-label" for="gridCheck">
-                Check me out
+                I'am not a ROBOT!
             </label>
         </div>
     </div>
