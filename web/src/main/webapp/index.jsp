@@ -4,12 +4,13 @@
 
 
 <html>
+
 <title>Homepage</title>
-<div class="multi-bg-example"></div>
+
 <link rel="stylesheet" href="/webjars/bootstrap/4.0.0-2/css/bootstrap.min.css">
 <body>
 <jsp:include page="/WEB-INF/fragments/header.jspf"/>
-<div class="multi-bg-example"></div>
+
 <br>
 <div class="container">
     <table class="table">
@@ -94,5 +95,5 @@
 <%@ include file="/WEB-INF/fragments/footer.jspf" %>
 <script src="webjars/bootstrap/4.0.0-2/js/bootstrap.js"></script>
 </body>
-
+</div>
 </html>
