@@ -14,27 +14,31 @@ public class HomeServlet extends HttpServlet {
     private int button;
 
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-        HttpSession session = request.getSession(true);
-        session.setMaxInactiveInterval(10);
 
-        request.getRequestDispatcher("/index.jsp").include(request, response);
-
-
+//        Action action = aCTION.VALUEoF(REQUEST.GETpARAMETER("ACTION"));
+//        Long bookId = Long.valueOf(request.getPArameter("bookId"))
+//
+//
+//        switch (action){
+//            case ADD:
+//                response.sendRedirect("/AddBookServlet");
+//
+//
+//            case 2:
+//
+//            case 3:
+//
+//            case 4:
+//
+//                default:
+//                    throw new UnsupportedOperationException("no action");
+//        }
 
     }
 
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 
-        switch (button){
-            case 1:
 
-
-            case 2:
-
-            case 3:
-
-            case 4:
-        }
 
     }
 }
