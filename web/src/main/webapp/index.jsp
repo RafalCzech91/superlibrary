@@ -4,7 +4,6 @@
 
 
 <html>
-<style></style>
 <title>Homepage</title>
 
 <link rel="stylesheet" href="/webjars/bootstrap/4.0.0-2/css/bootstrap.min.css">
@@ -31,6 +30,7 @@
         <table class="table">
             <thead class="thead-dark">
             <tr>
+
                 <th scope="col">#</th>
                 <th scope="col">Title</th>
                 <th scope="col">Name</th>
@@ -89,17 +89,17 @@
 
         <%--<form action="/HomeServlet" method="post">--%>
 
-        <form action="${pageContext.request.contextPath}/HomeServlet" method="post">
+        <form action="${pageContext.request.contextPath}/index.jsp" method="post">
             <input type="submit" class="btn btn-primary" name="ADD" value="ADD" />
             <input type="submit" class="btn btn-secondary" name="EDIT" value="EDIT" />
             <input type="submit" class="btn btn-danger" name="DELETE" value="DELETE" />
             <input type="submit" class="btn btn-success" name="SHOW" value="SHOW" />
         </form>
 
-        <a href="/AddBookServlet" class="btn btn-primary" role="button">ADD</a>
-        <a href="/DeleteBookServlet" class="btn btn-danger" role="button">DELETE</a>
-        <a href="/EditBookServlet" class="btn btn-secondary" role="button">edit</a>
-        <a href="/ShowBookDetailsServlet" class="btn btn-success" role="button">show</a>
+        <a href="/addBook.jsp" class="btn btn-primary" role="button">ADD</a>
+        <a href="/deleteBook.jsp" class="btn btn-danger" role="button">DELETE</a>
+        <a href="/editBook.jsp" class="btn btn-secondary" role="button">EDIT</a>
+        <a href="/showBookDetails.jsp" class="btn btn-success" role="button">SHOW</a>
 
     </div>
 

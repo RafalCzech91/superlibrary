@@ -1,8 +1,8 @@
 <%--
   Created by IntelliJ IDEA.
   User: Rafał
-  Date: 23.02.2019
-  Time: 09:57
+  Date: 24.02.2019
+  Time: 13:15
   To change this template use File | Settings | File Templates.
 --%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
@@ -23,7 +23,7 @@
     }
 </style>
 <head>
-    <title>AddBook</title>
+    <title>editBook</title>
     <link rel="stylesheet" href="/webjars/bootstrap/4.0.0-2/css/bootstrap.min.css">
 </head>
 <body>
@@ -31,17 +31,16 @@
 <div class="multi-bg-example">
 
     <br>
-    <form action="addBook.jsp" method="post" class="needs-validation" novalidate>
+    <form action="editBook.jsp" method="post" class="needs-validation" novalidate>
         <br>
 
-        <jsp:include page="/WEB-INF/fragments/form.jspf"/>
+        <%@ include file="/WEB-INF/fragments/form.jspf" %>
+        <br>
         <div class="container">
-            <button type="submit" class="btn btn-primary">Add</button>
-            <a class="btn btn-primary" href="index.jsp" role="button">Cancel</a>
+            <button type="submit" class="btn btn-primary">Edit</button>
+            <a class="btn btn-primary" href="editBook.jsp" role="button">Cancel</a>
         </div>
     </form>
-
-
 </div>
 <%@ include file="/WEB-INF/fragments/footer.jspf" %>
 </body>

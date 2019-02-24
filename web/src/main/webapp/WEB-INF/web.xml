@@ -5,9 +5,9 @@
 
     <display-name>SuperLibrary</display-name>
 
-    <welcome-file-list>
-        <welcome-file>HomeServlet</welcome-file>
-    </welcome-file-list>
+    <!--<welcome-file-list>-->
+        <!--<welcome-file>HomeServlet</welcome-file>-->
+    <!--</welcome-file-list>-->
 
     <jsp-config>
         <jsp-property-group>

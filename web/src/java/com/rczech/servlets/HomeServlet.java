@@ -2,18 +2,15 @@ package com.rczech.servlets;
 
 import com.rczech.services.BookService;
 import lombok.extern.slf4j.Slf4j;
-import org.hibernate.tool.schema.Action;
-
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
-import javax.swing.*;
 import java.io.IOException;
 
 
-@WebServlet("/HomeServlet")
+@WebServlet("/index.jsp")
 @Slf4j
 public class HomeServlet extends HttpServlet {
 
