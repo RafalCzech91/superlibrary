@@ -26,13 +26,5 @@ public class Book {
 
     private int authorId;
 
-    private String id;
-
-    //TODO generate contructor
-    // & geter and setter
-
 
 }
-
-
-

@@ -10,7 +10,7 @@ import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 
 
-@WebServlet("/index.jsp")
+@WebServlet("/HomeServlest")
 @Slf4j
 public class HomeServlet extends HttpServlet {
 
