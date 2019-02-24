@@ -1,8 +1,6 @@
 package com.rczech.servlets;
 
 import com.rczech.services.BookService;
-import org.hibernate.tool.schema.Action;
-
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
@@ -11,8 +9,8 @@ import javax.servlet.http.HttpServletResponse;
 
 import java.io.IOException;
 
-@WebServlet("/ShowServlet")
-public class ShowServlet extends HttpServlet {
+@WebServlet("/ShowBookDetailsServlet")
+public class ShowBookDetailsServlet extends HttpServlet {
 
     BookService bookService = new BookService();
 

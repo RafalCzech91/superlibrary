@@ -88,18 +88,18 @@
         </table>
 
         <%--<form action="/HomeServlet" method="post">--%>
-        <a href="addBook.jsp">
-            <button type="radio" class="btn btn-primary">Add</button>
-        </a>
-        <a href="editBook.jsp">
-            <button type="radio" class="btn btn-secondary">Edit</button>
-        </a>
-        <a href="deleteBook.jsp">
-            <button type="radio" class="btn btn-danger">Delete</button>
-        </a>
-        <a href="showBook.jsp">
-            <button type="radio" class="btn btn-success">Show</button>
-        </a>
+
+        <form action="${pageContext.request.contextPath}/HomeServlet" method="post">
+            <input type="submit" class="btn btn-primary" name="ADD" value="ADD" />
+            <input type="submit" class="btn btn-secondary" name="EDIT" value="EDIT" />
+            <input type="submit" class="btn btn-danger" name="DELETE" value="DELETE" />
+            <input type="submit" class="btn btn-success" name="SHOW" value="SHOW" />
+        </form>
+
+        <a href="/AddBookServlet" class="btn btn-primary" role="button">ADD</a>
+        <a href="/DeleteBookServlet" class="btn btn-danger" role="button">DELETE</a>
+        <a href="/EditBookServlet" class="btn btn-secondary" role="button">edit</a>
+        <a href="/ShowBookDetailsServlet" class="btn btn-success" role="button">show</a>
 
     </div>
 
