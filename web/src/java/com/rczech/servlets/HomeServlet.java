@@ -13,6 +13,7 @@ import java.io.IOException;
 @WebServlet("/HomeServlet")
 @Slf4j
 public class HomeServlet extends HttpServlet {
+
     private int button;
 
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
@@ -24,7 +25,6 @@ public class HomeServlet extends HttpServlet {
 //            case ADD:
 //                response.sendRedirect("/AddBookServlet");
 //                break;
-//
 //
 //            case EDIT:
 //                response.sendRedirect("EditBookServlet?bookId=" + bookId);
@@ -46,6 +46,8 @@ public class HomeServlet extends HttpServlet {
     }
 
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+
+
 
 
     }

@@ -36,6 +36,5 @@
 
 </div>
 <%@ include file="/WEB-INF/fragments/footer.jspf" %>
-
 </body>
 </html>
