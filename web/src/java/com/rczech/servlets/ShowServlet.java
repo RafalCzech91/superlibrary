@@ -1,5 +1,6 @@
 package com.rczech.servlets;
 
+import com.rczech.services.BookService;
 import org.hibernate.tool.schema.Action;
 
 import javax.servlet.ServletException;
@@ -12,7 +13,13 @@ import java.io.IOException;
 
 @WebServlet("/ShowServlet")
 public class ShowServlet extends HttpServlet {
+
+    BookService bookService = new BookService();
+
+
+
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+
 
 
 

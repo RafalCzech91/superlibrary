@@ -6,10 +6,13 @@ import org.hibernate.boot.MetadataSources;
 import org.hibernate.boot.registry.StandardServiceRegistry;
 import org.hibernate.boot.registry.StandardServiceRegistryBuilder;
 
-public class HibernateUtil {
+import javax.persistence.EntityManager;
+
+public class PersistenceUtil {
 
     private static StandardServiceRegistry registry;
     private static SessionFactory sessionFactory;
+
 
     public static SessionFactory getSessionFactory() {
         if (sessionFactory == null) {
@@ -24,7 +27,7 @@ public class HibernateUtil {
                 sessionFactory = metadata.getSessionFactoryBuilder().build();
             } catch (Exception e) {
                 e.printStackTrace();
-                HibernateUtil.shutdown();
+                PersistenceUtil.shutdown();
             }
         }
         return sessionFactory;
@@ -35,5 +38,6 @@ public class HibernateUtil {
             StandardServiceRegistryBuilder.destroy(registry);
         }
     }
+
 }
 
