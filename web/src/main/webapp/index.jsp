@@ -4,18 +4,18 @@
 
 
 <html>
-
+<style></style>
 <title>Homepage</title>
 
 <link rel="stylesheet" href="/webjars/bootstrap/4.0.0-2/css/bootstrap.min.css">
 <style>
     .multi-bg-example {
         width: 100%;
-        height: 400px;
+        height: 100%;
         background-image: url(background.jpg),
-        url(https://mdn.mozillademos.org/files/11307/bubbles.png),
+        url(background.jpg),
         linear-gradient(to right, rgba(30, 75, 115, 1), rgba(255, 255, 255, 0));
-        background-repeat: no-repeat,
+        background-repeat: repeat,
         no-repeat,
         no-repeat;
         background-position: bottom right,
@@ -25,7 +25,7 @@
 </style>
 <body>
 <jsp:include page="/WEB-INF/fragments/header.jspf"/>
-
+<div class="multi-bg-example">
 <br>
 <div class="container">
     <table class="table">
@@ -103,12 +103,10 @@
 
 </div>
 
-<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 </div>
 <%@ include file="/WEB-INF/fragments/footer.jspf" %>
 <script src="webjars/bootstrap/4.0.0-2/js/bootstrap.js"></script>
+</div>
 </body>
 </div>
 </html>
