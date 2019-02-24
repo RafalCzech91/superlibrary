@@ -11,7 +11,7 @@ public class BookRepository extends GenericRepository<Book, Long> implements IBo
 
     @Override
     public List<Book> findAll() {
-        return em.createQuery("select b from Book b", Book.class).getResultList();
+        return session.createQuery("select b from Book b", Book.class).getResultList();
     }
 
     @Override

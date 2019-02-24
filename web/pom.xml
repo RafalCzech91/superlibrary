@@ -16,13 +16,7 @@
     <!-- FIXME change it to the project's website -->
     <url>https://rafalczech91.github.io/superlibrary</url>
 
-    <properties>
-        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-        <maven.compiler.source>1.8</maven.compiler.source>
-        <maven.compiler.target>1.8</maven.compiler.target>
-    </properties>
-
-    <dependencies>
+        <dependencies>
         <dependency>
             <groupId>junit</groupId>
             <artifactId>junit</artifactId>

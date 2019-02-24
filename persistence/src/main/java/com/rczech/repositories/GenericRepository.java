@@ -1,7 +1,5 @@
 package com.rczech.repositories;
 
-
-
 import com.rczech.util.PersistenceUtil;
 import org.hibernate.Session;
 import javax.persistence.EntityTransaction;
